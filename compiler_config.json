@@ -1,30 +1,38 @@
 {
-  "optimizer": {
-    "enabled": true,
-    "runs": 490
+  "language":"Solidity",
+  "sources":{
+     "interfaces/IThirdwebContract.sol":{
+        "content":"// SPDX-License-Identifier: Apache-2.0\r\npragma solidity ^0.8.11;\r\n\r\ninterface IThirdwebContract {\r\n    /// @dev Returns the module type of the contract.\r\n    function contractType() external pure returns (bytes32);\r\n\r\n    /// @dev Returns the version of the contract.\r\n    function contractVersion() external pure returns (uint8);\r\n\r\n    /// @dev Returns the metadata URI of the contract.\r\n    function contractURI() external view returns (string memory);\r\n\r\n    /**\r\n     *  @dev Sets contract URI for the storefront-level metadata of the contract.\r\n     *       Only module admin can call this function.\r\n     */\r\n    function setContractURI(string calldata _uri) external;\r\n}"
+     }
   },
-  "evmVersion": "london",
-  "remappings": [
-    ":@chainlink/contracts/src/=node_modules/@chainlink/contracts/src/",
-    ":@ds-test/=lib/ds-test/src/",
-    ":@openzeppelin/=node_modules/@openzeppelin/",
-    ":@std/=lib/forge-std/src/",
-    ":contracts/=contracts/",
-    ":ds-test/=lib/ds-test/src/",
-    ":erc721a-upgradeable/=node_modules/erc721a-upgradeable/",
-    ":erc721a/=node_modules/erc721a/",
-    ":forge-std/=lib/forge-std/src/"
-  ],
-  "outputSelection": {
-    "*": {
-      "*": [
-        "evm.bytecode",
-        "evm.deployedBytecode",
-        "devdoc",
-        "userdoc",
-        "metadata",
-        "abi"
-      ]
+  "settings":{
+      "optimizer": {
+        "enabled": true,
+        "runs": 490
+      },
+      "evmVersion": "london",
+      "remappings": [
+        ":@chainlink/contracts/src/=node_modules/@chainlink/contracts/src/",
+        ":@ds-test/=lib/ds-test/src/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@std/=lib/forge-std/src/",
+        ":contracts/=contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":erc721a-upgradeable/=node_modules/erc721a-upgradeable/",
+        ":erc721a/=node_modules/erc721a/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "outputSelection": {
+        "*": {
+          "*": [
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "devdoc",
+            "userdoc",
+            "metadata",
+            "abi"
+          ]
+        }
+      }
     }
-  }
 }
