@@ -1,0 +1,128 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "beforeAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkFailure",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkSenderAndValue",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkSuccess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkSuccess2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"beforeAll()": {
+					"notice": "'beforeAll' runs before all other tests More special functions are: 'beforeEach', 'beforeAll', 'afterEach' & 'afterAll'"
+				},
+				"checkSenderAndValue()": {
+					"notice": "Custom Transaction Context: https://remix-ide.readthedocs.io/en/latest/unittesting.html#customization #sender: account-1 #value: 100"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/IWETH_test.sol": "testSuite"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 490
+		},
+		"remappings": [
+			":@chainlink/contracts/src/=node_modules/@chainlink/contracts/src/",
+			":@ds-test/=lib/ds-test/src/",
+			":@openzeppelin/=node_modules/@openzeppelin/",
+			":@std/=lib/forge-std/src/",
+			":contracts/=contracts/",
+			":ds-test/=lib/ds-test/src/",
+			":erc721a-upgradeable/=node_modules/erc721a-upgradeable/",
+			":erc721a/=node_modules/erc721a/",
+			":forge-std/=lib/forge-std/src/"
+		]
+	},
+	"sources": {
+		"interfaces/IWETH.sol": {
+			"keccak256": "0x0aee9af595a6ca21bfe6fab566aae7f5db6a3ac32e140278ad5e4be1c00745e7",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://f8869b664f7e7e46914726ca43a271b101687c85bbf08c572cb64c9980ce9ba5",
+				"dweb:/ipfs/Qmb4QaqpZtwNCav2XnrmW66jeXXZRgp6N8BKfQPPPcvBxb"
+			]
+		},
+		"remix_accounts.sol": {
+			"keccak256": "0xab088ffd1cd1033f54c2486f151b5d02281a3b76724c8e6f48479c25a4f7809e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5ddaf9976b1838f7028cbedfaf7f6e1cf8c898e100221176ff1406ee8b599f23",
+				"dweb:/ipfs/QmX2FYLXYyo5Cn55ZX2CfngpscSh4mQhcMVzQdQsh2vqcG"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/IWETH_test.sol": {
+			"keccak256": "0x49585c050736c846bb39ac7fdcfeaa70e31ae9cfdafdce74a87b8b454263461f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0b754731ba49e36566e6a49bfe69fa4e1a71cb8cb24187ae35ddce789770829c",
+				"dweb:/ipfs/Qmegxo84QnuDnbQrngCGLdkx9kCZAve5LDqGpumFz7W8U4"
+			]
+		}
+	},
+	"version": 1
+}
